@@ -1,0 +1,380 @@
+[ 2016-09-06T16:43:19+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-09-06T16:43:26+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2016-09-06T17:48:42+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-09-06T17:48:44+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-09-06T17:50:13+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0268s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2016-09-06T17:50:16+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0103s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-09-06T17:51:32+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0173s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-09-06T17:51:40+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-09-06T17:51:43+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-09-06T17:52:30+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0208s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0116s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-09-06T17:53:46+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-09-06T17:53:50+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-09-06T17:54:41+08:00 ] 10.10.0.106 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0163s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-09-06T17:54:44+08:00 ] 10.10.0.106 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-09-06T17:57:24+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0268s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0085s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-09-06T17:58:53+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0275s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-09-06T17:59:52+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-09-06T18:01:31+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 6,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-09-06T18:01:33+08:00 ] ::1 /project2/parttime/index.php/Wchat/Member/ajaxLoadWithdrawalsData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of Wchat\Controller\MemberController::acceptTask() should be compatible with that of Components\Base\WchatController::acceptTask() D:\WWW\project2\parttime\Application\Wchat\Controller\MemberController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`create_time`,`withdrawals_type`,`amount`,`status`,`audit_status` FROM `pt_member_withdrawals` WHERE ( member_id=2  ) ORDER BY create_time desc LIMIT 12,6   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+

@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,header,footer,menu{ margin:0; padding:0; vertical-align:middle; font:inherit; -webkit-text-size-adjust:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; font-size:100%;}
+address,caption,cite,code,dfn,em,th,var { font-weight:normal; font-style:normal;} 
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img,abbr,acronym{border:0;}
+input,textarea,select,button{ font-family:Helvetica, Roboto, Verdana, Geneva, Arial, sans-serif; -webkit-appearance:none; outline:none; font-size:14px; color:#666;}
+caption,th{ text-align:left;}
+q:before, q:after{ content:'';}
+ul,ol,dl{ list-style:none;}
+
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+
+/* CSS Document */
+body{ background:#FEFEFE; font-family:Helvetica, Roboto, Verdana, Geneva, Arial, sans-serif; font-size:14px; color:#666; line-height:1.5;}
+a{ color:#666; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+html,body{ height:100%; width:100%;}
+
+.wrap{ min-height:100%; display:-webkit-box; display:-webkit-flex; display:flex; -webkit-box-orient:vertical; -webkit-flex-flow:column; flex-flow:column; max-width:680px; margin:0 auto; background:#ffffff;}
+@media screen and (min-width:1024px){
+	.wrap{ box-shadow:0 0 5px rgba(0,0,0,0.1);}
+}
+.flex{ display:-webkit-box; display:-webkit-flex; display:flex;}
+
+/*头部*/
+.header{ padding:15px 20px 5px 20px;}
+.header .logo{ display:block; height:40px; margin:0 auto;}
+.header .slogan{ display:block; width:100%; max-width:280px; margin:10px auto 0 auto;}
+.headerTab{ width:100%; height:44px; border-bottom:1px solid #E6E6E6; background:#F6F6F6; position:relative; z-index:1; display:-webkit-box; display:-webkit-flex; display:flex;}
+.headerTab .title{ text-align:center; font-size:18px; line-height:44px; color:#666; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; margin:0 60px;}
+.headerTab .logo{ display:block; width:128px; height:28px; margin:8px 0 0 10px; background:url(../images/logo.png) no-repeat; background-size:128px 28px;}
+.btnBack{ display:block; min-width:28px; height:100%; font-size:32px; line-height:42px; padding:0 10px;}
+.btnNav{ display:block; height:100%; line-height:44px; font-size:15px; padding:0 10px; text-align:right; min-width:28px;}
+.btnNav .fa{ font-size:20px;}
+.headerCenter{ -webkit-box-flex:1; -webkit-flex:1; flex:1;}
+.headerLeft,.headerRight{ position:absolute; bottom:0; height:44px;}
+.headerLeft{ left:0;}
+.headerRight{ right:0;}
+
+/*通用*/
+.main{ -webkit-box-flex:1; -webkit-flex:1; flex:1;}
+.formError,.errorMessage{ background:#FEECE9; color:#F30; border:1px solid #FBCDBE; text-align:center; border-radius:3px; margin-top:15px; padding:8px 10px;}
+.form{ margin:0 auto; padding:0 20px;}
+.form .label{ display:block; color:#999; margin-bottom:5px;}
+.form .field{ margin-top:15px; position:relative; z-index:1;}
+.form .field input{ display:block; width:92%; border:1px solid #E0E0E0; background:#FFF; padding:10px 4%; height:20px; line-height:20px;}
+.form .field input:focus{ border-color:#FED00A;}
+.form .field input:disabled{ border-color:#EEE; background:#F9F9F9; color:#AAA;}
+.form .disabledCode{ display:block; width:92%; border:1px solid #E0E0E0; background:#FFF; padding:10px 4%; height:20px; line-height:20px; border-color:#EEE; background:#F9F9F9; color:#BBB;}
+.btnSentCode{ position:absolute; z-index:1; height:100%; right:0; top:0;}
+.btnSentCode a{ display:block; margin:6px 5px; background:#91DD32; border-radius:3px; height:30px; line-height:30px; padding:0 10px; color:#FFF;}
+.btnSentCode a.disabled{ background:#CCC;}
+.form .tipsMsg{ font-size:12px; margin:5px 5px 0 5px; color:#999;}
+.form em.invalid{ display:block; font-style:normal; font-size:12px; margin:5px 5px 0 5px; color:#999;}
+.form .field.state-error input{ border-color:#F30;}
+.form .field.state-error .tipsMsg{ color:#F30;}
+.state-error + em.invalid{ color:#F30;}
+.form .button{ margin-top:15px;}
+.form .submit{ display:block; width:100%; background:#FFC501; border:none; border-bottom:2px solid #F2B206; color:#FFF; text-align:center; height:40px; font-size:18px; line-height:40px; border-radius:8px;}
+.memberFooter{ padding-bottom:25px; text-align:center; font-size:16px;}
+.memberFooter a{ color:#03A9F4;}
+.form .verifyField{ position:relative; z-index:1; padding-right:113px;}
+.form .verifyField .verifyImg{ position:absolute; z-index:1; right:0; top:0; width:103px; height:42px; overflow:hidden;}
+.form .verifyField .verifyImg img{ width:103px; height:42px;}
+.footer,.formFooter{ padding:20px 15px; text-align:center;}
+.footer a,.formFooter a{ color:#FFC501;}
+
+.memberHome{}
+.memberHome section{ margin-top:20px; background:#FFF; border:1px solid #E5E5E5; border-width:1px 0;}
+.memberHome .item{ border-bottom:1px solid #E5E5E5; line-height:44px; margin-left:10px; padding-right:10px; display:-webkit-box; display:-webkit-flex; display:flex;}
+.memberHome .item:last-child{ border-bottom:none;}
+.memberHome .item:after{ font-family:FontAwesome; color:#AAA; font-size:22px; content:"\f105"; float:right;}
+.memberHome.notLink .item:after{ display:none;}
+.memberHome .item .text{ -webkit-box-flex:1; -webkit-flex:1; flex:1;}
+.memberHome .item .avatar{ width:30px; height:30px; border-radius:30px; overflow:hidden; border:1px solid #CCC; margin:6px 10px 0 0;}
+.memberHome .item .avatar img{ display:block; width:100%; height:100%;}
+.memberHome .item .url{ color:#FFC501;}
+.memberHome .item.logout{ text-align:center; color:#F30;}
+.memberHome .item.logout:after{ display:none;}
+.memberHome .btn{ border:none; margin:15px;}
+.memberHome .btn a{ display:block; width:100%; background:#FFC501; border:none; border-bottom:2px solid #F2B206; color:#FFF; text-align:center; height:40px; font-size:18px; line-height:40px; border-radius:8px;}
+.memberHome .btn a.disabled{ background:#CCC; border-color:#AAA;}
+
+.qrcode{ margin:15px; font-size: 30px}
+.qrcode img{ display:block; width:240px; margin:10px auto 0 auto;}
+.qrcode .danger{ color:#F30; margin-top:5px;}
+.qrcode .tips{ font-size:12px; color:#999;}
+.inviteTip{ background:#91DD32; color:#FFF; padding:5px 10px; text-align:center; margin:0 0 10px 0;}
+
+.payoutHistoryHeader{ margin:10px 10px 0 10px; padding:8px 15px; color:#FFF; background-color:#91DD32; font-size:14px; font-weight:bold;}
+.payoutHistory{ background:#FFF; border-radius:0 0 5px 5px; margin:0 10px 10px 10px; font-size:12px;}
+.payoutTips{ padding:10px; border:1px solid #E5E7E9; border-width:0 1px 1px 1px;}
+.payoutHistory th,.payoutHistory td{ border-collapse:collapse; border:1px solid #E5E7E9; padding:8px 5px; text-align:center;}
+.payoutHistory th{ background:#F0F0F0; border:1px solid #E5E7E9; border-top:0; color:#666; font-weight:bold;}
+.payoutHistory td a{ clear:both; display:inline-block; padding:2px 8px; border-radius:3px; background:#F5F7F8; border:1px solid #25AAE1; color:#25AAE1; margin-top:3px;}
+.payoutHistory .status{ display:block; color:#8DC63F;}
+.payoutHistory .status.repay{ color:#F88611;}
+.viewMore{ display:block; margin-top:10px; background:#F9F9F9; border:1px solid #CCC; padding:8px; text-align:center; border-radius:5px; color:#666; font-size:16px;}
+.layer{ position:fixed; z-index:999; width:100%; height:100%; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.8); box-sizing:border-box;}
+.layerMain{ position:absolute; left:15px; right:15px; top:40%; margin-top:-100px; background:#FFF; border-radius:5px; padding:15px; box-sizing:border-box; color:#717B88;}
+.repayStatus{ font-size:14px;}
+.repayStatus a{ border-bottom:1px dotted #25AAE1; color:#25AAE1;}
+.repayStatus i{ display:block; font-style:normal; font-size:28px; color:#FFF; width:48px; height:48px; border-radius:50%; margin:0 auto 10px auto; text-align:center; line-height:45px;}
+.repayStatus.failed i{ background:#F30;}
+.repayStatus.success i{ background:#8DC63F;}
+
+.rejectHeader{ margin:10px 10px 0 10px; padding:8px 15px; color:#FFF; background-color:#F05A26; font-size:14px; font-weight:bold; text-align:center;}
+.rejectHistory{ background:#FFF; border-radius:0 0 5px 5px; padding:0 10px 10px 10px; font-size:12px;}
+.rejectTips{ padding:10px; border:1px solid #E5E7E9; border-width:0 1px 1px 1px; font-size:13px;}
+.rejectTips strong{ color:#F05A26;}
+.rejectHistory th,.rejectHistory td{ border-collapse:collapse; border:1px solid #E5E7E9; padding:8px 5px; text-align:center;}
+.rejectHistory th{ background:#F0F0F0; border:1px solid #E5E7E9; border-top:0; color:#666; font-weight:bold;}
+.rejectHistory td a{ clear:both; display:inline-block; padding:2px 8px; border-radius:3px; background:#F5F7F8; border:1px solid #25AAE1; color:#25AAE1; margin-top:3px;}
+.rejectHistory .status{ display:block; color:#8DC63F;}
+.rejectHistory .status.refused{ color:#F88611;}
+.rejectHistory .status.expired{ color:#9A9A9A;}
+.rejectHistory .status.proccessing{ color:#28D5E0;}
+.rejectHistory td em{ display:block; color:#9D9D9D; font-size:11px; line-height:1;}
+.rejectHistory td:nth-child(2){ text-align:left; padding:8px 10px;}
+.rejectTitle{ font-size:14px; font-weight:bold; margin:0 10px; padding:10px 5px; border-bottom:1px solid #E5E5E5; background:#FAFAFA;}
+.rejectTitle em{ display:block; color:#999; text-align:right; font-size:12px; font-weight:normal; line-height:1.2;}
+.rejectDes{ word-break:break-all; margin:5px 10px; padding:5px; border-bottom:1px solid #E5E5E5;}
+.rejectDes h3,.rejectImages h3{ margin-bottom:5px; color:#999;}
+.rejectImages{ margin:5px 10px; padding:5px;}
+.rejectImages li{ margin:5px 0; padding:5px; background:#F9F9F9; border:1px solid #F0F0F0;}
+.rejectImages img{ display:block; width:100%;}
+.btnAppeal{ display:block; margin:5px 10px 25px 10px; text-align:center; background:#FFB600; font-size:16px; color:#FFF; padding:8px; border-radius:5px;}
+.rejectSuccess{ text-align:center; padding:15px;}
+.rejectSuccess .fa-check{ background:#63C502; color:#FFF; display:block; width:64px; height:64px; font-size:32px; line-height:64px; border-radius:50%; margin:10px auto;}
+.rejectSuccess .btnNormal{ margin-top:15px;}
+
+.article{ padding:15px;}
+.article p{ padding-bottom:12px;}
+.article a{ color:#67ADEE;}
+.article img{ max-width:100%;}
+
+.importantInfo{margin:15px 20px; border:1px solid #FC0; background:#FFE; font-size:12px; padding:10px;}
+
+.jztp{
+	margin: 0 auto;
+	display: block;
+}

@@ -1,0 +1,22 @@
+[ 2016-09-12T10:00:46+08:00 ] ::1 /project2/parttime/index.php/Wchat/Home/ajaxLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `pt_manager` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `pt_wechat_account` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `pt_task` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `pt_partner` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `pt_partner_deposit` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_result` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `pt_task_submit_picture` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `pt_member_withdrawals` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `pt_task_handle` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `pt_member` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: auto D:\WWW\project2\parttime\ThinkPHP\Library\Think\Model.class.php 第 1134 行.
+SQL: SELECT `id`,`password` FROM `pt_member` WHERE ( mobile='13817196302' ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+

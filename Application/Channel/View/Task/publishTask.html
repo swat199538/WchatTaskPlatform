@@ -1,0 +1,118 @@
+<section id="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin-bottom:2px;">
+                    <h3 class="panel-title">
+                        添加任务
+                        <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Task/index')}">返回列表</a>
+                    </h3>
+                    <div class="actions pull-right">
+                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal form-border" method="post" action="{:U('Task/publishTask')}" id="form">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务名称</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="title" value="{$info.title}" placeholder="任务的名称"/>
+                                <div class="help-block">{$error.title}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务单价</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="price" value="{$info.price}" placeholder="任务的单价"/>
+                                <div class="help-block">{$error.price}</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">开始时间</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control datepicker" name="start_time"  readonly placeholder="开始任务的时间">
+                                <div class="help-block">{$error.start_time}</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">结束时间</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control datepicker" name="end_time" readonly placeholder="结束任务的时间"/>
+                                <div class="help-block">{$error.end_time}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">人数限制</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="quantity" value="{$info.quantity}" placeholder="接受任务人数限制" />
+                                <div class="help-block">{$error.quantity}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务类型</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" name="type">
+                                    <option value="1" selected>投票</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">投票网址</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="vote_url" value="{$info.vote_url}" placeholder="请填写要去投票的页面"/>
+                                <div class="help-block">{$error.vote_url}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">投票内容</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control" name="vote_remark"  placeholder="请填写投票的内容">{$info.vote_remark}</textarea>
+                                <div class="help-block">{$error.vote_remark}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务执行速度限制</label>
+                            <div class="col-sm-6">
+                                <input type="text" value="{$info.rate}"  class="form-control" name="rate" placeholder="一分钟最多多少人接任务(0为不限速)"/>
+                                <div class="help-block">{$error.rate}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">备注</label>
+                            <div class="col-sm-6">
+                                <input type="text" value="{$info.remark}"  class="form-control" name="remark" placeholder="方便管理员审核（可不填）"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">我剩余的金额</label>
+                            <div class="col-sm-6">
+                                <input type="text" readonly="readonly" value="￥:{$balance}" class="form-control" name="money" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">预计费用</label>
+                            <div class="col-sm-6">
+                                <input type="text" readonly="readonly" value="{$info.budget}"  placeholder="当余额为零时任务会被自动暂停" class="form-control" name="budget" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <button type="submit" class="btn btn-parimary">提　交</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $("#firstLi").removeClass("active");
+        $("#secondLi").addClass("active");
+    })
+</script>

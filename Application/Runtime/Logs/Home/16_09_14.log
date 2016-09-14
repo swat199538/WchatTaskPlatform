@@ -1,0 +1,6 @@
+[ 2016-09-14T10:49:03+08:00 ] ::1 /project2/parttime/
+ERR: 模板不存在:./Application/Home/View/Layouts/layout.html
+
+[ 2016-09-14T11:23:52+08:00 ] ::1 /project2/parttime/
+ERR: 模板不存在:./Application/Home/View/Layouts/layout.html
+

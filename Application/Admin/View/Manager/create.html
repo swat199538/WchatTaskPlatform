@@ -1,0 +1,83 @@
+<section id="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin-bottom:2px;">
+                    <h3 class="panel-title">
+                        添加管理员
+                        <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Manager/index')}">返回列表</a>
+                    </h3>
+                    <div class="actions pull-right">
+                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal form-border" method="post" action="{:U('Manager/create')}" id="form">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="username" value="{$data['username']}" placeholder="用户名只能是字母，数字，下划线的组合"/>
+                                <div class="help-block">{$error['username']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="email" value="{$data['email']}" placeholder="请填写正确的email地址"/>
+                                <div class="help-block">{$error['email']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">密　码</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" name="password" value="" placeholder="密码只能是字母和数字的组合，不得包含非法字符"/>
+                                <div class="help-block">{$error['password']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">密码确认</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" name="password_confirmation" value="" placeholder="确认密码和密码须一致"/>
+                                <div class="help-block">{$error['password_confirmation']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">备注信息</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control" name="remark" placeholder="备注信息在255个字符以内">{$data['remark']}</textarea>
+                                <div class="help-block">{$error['remark']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="manager-status">用户状态</label>
+                            <div class="col-sm-6" id="manager-status">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="status" id="optionsRadios1" value="1" {$data['status']|radioChecked=1,###,true} />
+                                        　可　用
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="status" id="optionsRadios2" value="0" {$data['status']|radioChecked=0,###} />
+                                        　禁　用
+                                    </label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="help-block">{$error['status']}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <button type="submit" class="btn btn-parimary">提　交</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

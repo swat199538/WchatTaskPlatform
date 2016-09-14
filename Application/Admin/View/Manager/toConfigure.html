@@ -1,0 +1,56 @@
+
+    <!--main content start-->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default" id="role_lists">
+                        <div class="panel-heading" style="margin-bottom:2px;">
+                            <h1 class="panel-title">
+                                分配角色
+                                <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Role/index')}">返回列表</a>
+                            </h1>
+                            <div class="actions pull-right">
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive" style="overflow:hidden;">
+                                <h3 style="margin-bottom:2%;">
+                                    <strong style="font-size:23px;">管理员 : {$user['username']}</strong>
+                                </h3>
+                                <form class="form-horizontal form-border" method="post" action="{:U('Manager/toConfigure')}" id="form">
+                                    <?php if (!empty($role)) : ?>
+                                    <table class="table table-bordered table-hover dataTable">
+                                        <tr>
+                                            <td>
+                                                <strong style="font-size:16px;">角色列表</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <?php foreach($role as $item) : ?>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" name="role[]" value="{$item['id']}" <?php echo in_array($item['id'], $userRole) ? 'checked' : '' ?> /> {$item['remark']}
+                                                    </label>
+                                                <?php endforeach; ?>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <input type="hidden" name="id" value="{$user['id']}" />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-6 col-sm-6">
+                                            <button type="submit" class="btn btn-parimary">提　交</button>
+                                        </div>
+                                    </div>
+                                    <?php else : ?>
+                                        <h3>请先添加角色</h3>
+                                    <?php endif; ?>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

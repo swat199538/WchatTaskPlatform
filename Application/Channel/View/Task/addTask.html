@@ -1,0 +1,72 @@
+<section id="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin-bottom:2px;">
+                    <h3 class="panel-title">
+                        增加任务人数
+                        <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Task/index')}">返回列表</a>
+                    </h3>
+                    <div class="actions pull-right">
+                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal form-border" method="post" action="{:U('Task/addTask')}" id="form">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务名称</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="title" value="{$taskRest.0.title}{$info.title}" readonly="readonly" placeholder="任务的名称"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">任务单价</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="price" readonly="readonly" value="{$taskRest.0.price}{$info.price}" placeholder="任务的单价"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">人数限制</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" readonly="readonly" name="quantity" value="{$taskRest.0.quantity}{$info.quantity}" placeholder="接受任务人数限制" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">新增人数</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control"  name="add_quantity" value="{$info.add_quantity}"  placeholder="新增的人数不能少于1人" />
+                                <div class="help-block">{$error.add_quantity}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">我剩余的金额</label>
+                            <div class="col-sm-6">
+                                <input type="text" readonly="readonly" value="{$balance}{$info.money}" class="form-control" name="money" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">预计费用</label>
+                            <div class="col-sm-6">
+                                <input type="text" readonly="readonly" value="{$info.budget}"  placeholder="当余额为零时任务会被自动暂停" class="form-control" name="budget" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <button type="submit" class="btn btn-parimary">提　交</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="id" value="{$taskRest.0.id}{$info.id}">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $("#firstLi").removeClass("active");
+        $("#secondLi").addClass("active");
+    })
+</script>

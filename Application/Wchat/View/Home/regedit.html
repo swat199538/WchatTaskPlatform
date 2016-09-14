@@ -1,0 +1,157 @@
+<section class="container animated fadeInUp">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="login-wrapper">
+                <header>
+                    <div class="brand">
+                        <a href="index.html" class="logo">
+                            <i class="icon-layers"></i>
+                            <span>NEU</span>BOARD</a>
+                    </div>
+                </header>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            用户注册
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <p> </p>
+                        <form class="form-horizontal" method="post" action="{:U('Home/regedit')}">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="text" name="phone" class="form-control sphone" id="email" value="{$data['username']}" placeholder="请填写手机号">
+                                    <i class="fa fa-user"></i>
+                                    <div class="help-block phoneError" >{$error['phone']}</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" name="password" id="password" value="" placeholder="请填写密码">
+                                    <i class="fa fa-lock"></i>
+                                    <div class="help-block">{$error['password']}</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" name="password2" id="password" value="" placeholder="请确认密码">
+                                    <i class="fa fa-lock"></i>
+                                    <div class="help-block">{$error['password2']}</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control scode" name="captcha" value="" style="padding-left: 32px" placeholder="验证码">
+                                    <i class="fa fa-key"></i>
+                                    <span class="help-block" id="codeError"></span>
+                                </div>
+                                    <span class="input-group-btn">
+                                            <img style="cursor: pointer;" src="{:U('Home/verfiyImg')}" id="codeImg" onclick='this.src="{:U('Home/verfiyImg')}?" + Math.random()'>
+                                    </span>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-5">
+                                    <input type="text" name="phoneCode" class="form-control " id="email" value="{$data['username']}" placeholder="请填写手机验证码">
+                                    <i class="fa fa-user"></i>
+                                    <div class="help-block">{$error['phoneCode']}</div>
+                                </div>
+                                    <button type="button" class="btn btn-default btn-square sbtn" >发送验证码</button>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary btn-block">注册</button>
+                                </div>
+                            </div>
+                            <input type="hidden" name="referee" value="{$referee}">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    var state=1;
+    var count=120;
+    var tmp;
+    function sendSMS() {
+       if (state==1) {
+           state=0;
+           $("#codeError").text("");
+           $("#phoneError").text("");
+           var mobile=$(".sphone").val();
+           var code=$(".scode").val();
+           $.get(
+                   '{:U("Home/sendIdentify","",false)}',
+                   {
+                       'mobile':mobile,
+                       'code':code
+                   },
+                   function (data) {
+                       switch (data){
+                           case "500":
+                               $("#codeImg").attr("src","{:U('Home/verfiyImg')}?" + Math.random());
+                               $("#codeError").text("验证码错误");
+                               $(".scode").val("");
+                               state=1;
+                               break;
+                           case "501":
+                               $(".sphone").val("");
+                               $(".phoneError").text("手机格式错误");
+                               $("#codeImg").attr("src","{:U('Home/verfiyImg')}?" + Math.random());
+                               $(".scode").val("");
+                               state=1;
+                               break;
+                           case "502":
+                               $(".sphone").val("");
+                               $(".phoneError").text("该手机已被注册");
+                               $("#codeImg").attr("src","{:U('Home/verfiyImg')}?" + Math.random());
+                               $(".scode").val("");
+                               state=1;
+                               break;
+                           case "503":
+                               $(".sphone").val("");
+                               $("#phoneError").text("手机号必须填写");
+                               $("#codeImg").attr("src","{:U('Home/verfiyImg')}?" + Math.random());
+                               $(".scode").val("");
+                               state=1;
+                               break;
+                           case "504":
+                               alert("短信发送失败，请刷新页面重试");
+                               state=1;
+                               break;
+                           case "100":
+                               $(".sbtn").unbind("click");
+                               tmp=setInterval("restrictSend()",1000);
+                               break;
+                           case "505":
+                               alert("120秒以后重新发送");
+                               state=1;
+                               break;
+                       }
+                   }
+           );
+       }
+    }
+
+    function restrictSend() {
+        $(".sbtn").text("已发送"+count+"秒后可重新发送");
+        count--;
+        if (count<0) {
+            state=1;
+            $(".sbtn").text("发送验证码");
+            count=120;
+            clearInterval(tmp);
+            $(".sbtn").bind("click",function () {
+                sendSMS();
+            });
+        }
+    }
+
+    $(".sbtn").bind("click",function () {
+        sendSMS();
+    });
+
+</script>

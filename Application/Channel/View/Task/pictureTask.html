@@ -1,0 +1,48 @@
+<div class="task-box">
+
+
+    <!--导出截图-->
+    <div class="dt-toolbar" style="border-bottom: 1px solid #ccc;">
+        <span style="color:red;font-size:18px;font-weight:bold">请谨慎使用审核权限，乱审核造成用户申诉比例过高的话，将永久回收任务审核和任务截图权限，严重的将回收账户</span>
+        <a href="{:U('Task/index')}" class="btn btn-primary" >返回列表</a>
+    </div>
+
+    <!--审核内容-->
+    <div class="row" style="margin: 5px 0">
+
+         <?php foreach ($data as $items) : ?>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <?php if (!is_array($items['image_url'])) : ?>
+                            <a href="__PUBLIC__/storage/taskImge/<?php echo $items['image_url'] ?>" target="_blank">
+                            <img style="display: inline-block" src="__PUBLIC__/storage/taskImge/<?php echo $items['image_url'] ?>" alt="..." width="160px" height="280px">
+                            </a>
+                        <?php else : ?>
+                        <?php foreach ($items['image_url'] as $url) :?>
+                            <a href="__PUBLIC__/storage/taskImge/<?php echo $url ?>" target="_blank">
+                            <img style="display: inline-block" src="__PUBLIC__/storage/taskImge/<?php echo $url ?>" alt="..." width="160px" height="280px">
+                            </a>
+                        <?php endforeach; ?>
+                    <?php endif;  ?>
+                    <div class="caption">
+                        <p>用户ID: <?php echo $items['member_id'] ?> </p>
+                        <p>提交时间: <?php echo $items['create_time'] ?> </p>
+                        <!--代做权限管理-->
+                        <p style="text-align: center"><a href="#" class="btn btn-primary" role="button">审核不通过</a></p>
+                        <!--代做权限管理-->
+                    </div>
+                </div>
+             </div>
+         <?php endforeach; ?>
+
+    </div>
+    <div class="pages">
+        <?php echo $pageStr ?>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#firstLi").removeClass("active");
+        $("#secondLi").addClass("active");
+    })
+</script>

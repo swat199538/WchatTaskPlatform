@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+.invitation_menu{ background:#ffffff; position:fixed; bottom:0px; width:100%; z-index:830; border-top:1px solid #ddd}
+.invitation_menu span{ width:25%; display:block; float:left;}
+.invitation_menu span a{ display:block; text-align:center; font-size:30px;padding:30px 0px;vertical-align:central; color:#363636}
+.invitation_menu span.open a{ color:#3a90f4; font-weight:bold; padding-bottom:26px;border-bottom:4px solid #3a90f4}
+.yq_share_msg{ display:none;}
+.share_msgTop{ position:fixed; top:30px; right:60px; z-index:100}
+/****普通版*****/
+.return{ width:20px; height:20px; border-top:5px solid #fff; border-left:5px solid #fff; background:transparent;-webkit-transform: rotate(-45deg);transform:rotate(-45deg); display:block; position:absolute;top:56px;left:55px; z-index:99}
+.ordinary_invite .myinfo{ background:#3a90f4; position:relative; overflow:hidden; padding-bottom:140px}
+.ordinary_invite .b:after{content: '';position: absolute; width:180%; height:160px;-webkit-transform: rotate(-7deg); bottom:-50px;left:-2%; background:#fff}
+.ordinary_invite .my_head{width:100%;text-align:center; color:#fff;line-height:60px;font-size:28px;font-weight:bold;margin:45px auto 30px auto; position:relative; padding-bottom:20px;}
+.ordinary_invite .my_head img{ width:60px; height:60px; border-radius:80px; margin-right:30px;}
+.ordinary_invite .my_head:before{content: '';position: absolute;left:50%;bottom:0px;width:10%; height:2px; margin-left:-5%;background:#2a71da}
+.ordinary_invite .my_ts{width:100%; text-align:center;font-size:24px; line-height:40px; color:#fff;}
+.ordinary_invite .my_ts font{font-size:24px; color:#fff; width:100%; text-align:center; display: block;float: left;}
+.ordinary_invite .my_income{width:92%;background:#2a71da url(http://static.appshike.com/images/inotation_01.png) repeat-x left bottom; margin:64px auto 30px auto; padding:60px 0px; text-align:center; position:relative}
+.ordinary_invite .my_income:before{content: '';position: absolute;left:0px; top:0px; width:100%;background:url(http://static.appshike.com/images/inotation_01.png) repeat-x;height:2px;z-index:8;-moz-transform:scaleY(-1);-webkit-transform:scaleY(-1);-o-transform:scaleY(-1);transform:scaleY(-1);filter:FlipV();}
+.ordinary_invite .my_income p{font-size:24px;color:#b1d5ff;display:inline-block; text-align:left;margin:0 auto}
+.ordinary_invite .my_income p span{ font-size:110px; color:#fff;text-shadow:3px 4px 0px #3a90f4; margin-right: 30px;font-weight: 500;}
+.invite_friend{ border:0px;background:#fff; color:#3a90f4; text-align:center; font-weight:bold;font-size:32px; border-radius:8px; height: 89px;line-height: 89px; width:60%; margin:0px auto 20px auto; display:block;}
+.invite_friend.brc{ opacity:0.8;}
+.friend_result{ width:100%;}
+.friend_result .tit{ width:100%; text-align:center; font-weight:bold; font-size:24px; color:#828282}
+.sk_video{margin-bottom: 30px;width: 100%;text-align: center;background:-webkit-gradient(linear,100% 100%, 0% 100%, from(#3a90f4), to(#3a90f4), color-stop(0.3,#0165FF));padding: 24px 0px;display: block;}
+.sk_video span{display: inline-block;font-size: 22px;color: #ffffff;text-align: left;background:url(http://static.appshike.com/images/playbutton.png)no-repeat -8px -4px;padding:5px 0px 5px 84px;font-weight:300;}
+.sk_video.brc{opacity:.6;}
+#listfont{height:1360px; width:100%; position:relative;overflow:hidden;}
+.friend_list li .con{ margin-left:132px; padding:20px 30px 20px 0px; border-bottom:1px solid #ddd; position:relative}
+.friend_list li .tit{ position:absolute;left:-102px;float:left;}
+.friend_list li .tit .photo{width:80px; height:80px; border:1px solid #ddd; border-radius:50px; display:block; float:left;}
+.friend_list li .tit .photo img{width:80px; height:80px;border-radius:50px;}
+.friend_list li .tit .name{margin:8px 15px 0px 20px; float:left; width:45%;text-align:left;}
+.friend_list li .tit .name h4{ font-size:24px; font-weight:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; color:#363636}
+.friend_list li .tit .name font{ color:#949494;font-weight:normal;}
+.friend_list li .tit_right{height:60px; margin-top:20px;float:right; color:#727272; font-size:24px; text-align:right;}
+.friend_list li:last-child .con{ border-bottom:0px;}
+
+.share_box{width:100%; bottom:95px;left:0px;z-index:100;overflow:hidden;position:fixed; background:#fff;}
+.share_l{width:100%;}
+.share_l li{ width:33.3333%;float:left; text-align:center;}
+.share_l li span{display:block; margin:140px auto; background:url(http://static.appshike.com/images/share_icon.png) no-repeat; padding-top:110px; font-size:24px;text-align:center;color:#3d495c}
+.share_l li span.Send_friend{background-position:center 5px;}
+.share_l li span.circle_friend{background-position:center -166px;}
+.share_l li span.collect{background-position:center -334px;}
+.share_l li.brc{background-color:rgba(0,0,0,0.1);}
+/*****定制版邀请****/
+.customised{width:100%;}
+.customised .customised_list{ text-align:center; width:100%; margin:50px auto 30px auto;}
+
+/*******晒单版*******/
+.yq_Bask_single,.yq_Bask_single{padding-bottom:100px;}
+.yq_Bask_single .single_bt{background:url(http://static.appshike.com/images/yq_saidanbt.png) no-repeat center center; display:block; width:100%; height:80px; margin:10% 0px 5% 0px;}
+.yq_Bask_single .yq_swinfo{ width:460px; margin:0 auto;}
+.yq_Bask_single .yq_swinfo li{ border-bottom:1px #fff solid;color:#fff; font-size:36px; padding:15px 30px; margin-bottom:15px;}
+.yq_Bask_single .yq_swinfo li label{ float:right; color:#fff; font-size:36px;}
+.yq_Bask_single .Total_revenue{ font-size:36px; margin:70px auto; width:100%; text-align:center; color:#fff;}
+.yq_Bask_single .shai_but{ border:2px solid #fff; padding:25px 0px; color:#fff; display:block; margin:10px auto; width:460px; border-radius:18px; text-align:center; font-size:36px;}
+.yq_Bask_single .shai_but.btn02{background-color:rgba(255,255,255,0.2);}
+
+.yq_report_card:before,.yq_report_card:after{background:url(http://static.appshike.com/images/saidan_RL_deck.png)no-repeat;content: "";position: absolute;}
+.yq_report_card{width:590px;padding-bottom:88px;border:6px solid #002e73;background: #fff; border-radius: 40px 0px 0px 0px;margin:90px auto 40px auto;position: relative;}
+.yq_report_card:before{right:-57px;top:-6px; width:58px; height: 81px;}
+.yq_report_card .header{ width: -moz-calc(100% - 116px);width: -webkit-calc(100% - 116px);width: calc(100% - 116px);text-align: center;border-bottom: 4px solid #002e73;padding:38px 0px;margin: 0 auto;}
+.yq_report_card .header h3{font-size:36px; color: #002e73;font-weight: bold;}
+.yq_report_card .header p{font-size:24px; color: #002e73;}
+.yq_report_card .infolist{width: -moz-calc(100% - 116px);width: -webkit-calc(100% - 116px);width: calc(100% - 116px);margin:22px auto 0px auto}
+.yq_report_card .infolist li{width: 100%; padding:23px 0px;border-bottom:2px dashed #002e73;float: left;}
+.yq_report_card .infolist li label{font-size: 26px;color:#3d5578;font-weight: bold;}
+.yq_report_card .infolist li span{float: right;font-size: 28px;color:#3d5578;font-weight: bold;}
+.yq_report_card .sd_revenue{margin:74px auto 44px auto; position: relative; padding-bottom: 74px;background: url(http://static.appshike.com/images/saidanbj_deck.png)no-repeat right bottom; width:88%;}
+.yq_report_card .sd_revenue p{ text-align: center;}
+.yq_report_card .sd_revenue .bt{font-size: 28px;color:#002e73}
+.yq_report_card .sd_revenue .sr{font-size:38px;font-weight:500;color:#002e73;margin-top:4px}
+.yq_report_card .sd_revenue .sr font{font-size:38px;font-weight:500;color:#002e73;font-weight:bold;}
+.yq_report_card .sd_btn{font-size: 32px; height:94px;border-radius:10px 0px 0px 40px;color:#002e73;border:6px solid #002e73;font-weight:bold;background:#bbd4f9;width: 100%;position: absolute;left:-46px;bottom: -8px;border-right: 0px;}
+.yq_report_card:after{right:-8px;bottom:-10px;width:70px;height:97px;background-position: 0px -81px;}
+.yq_report_card .sd_btn.brc{background:#a3c6fa;}
+/*****图片版*****/
+.invitation_rules{ text-align: center;width: 100%;margin-top: -40px;}
+.invitation_rules .rules{width:26%;display: inline-block; text-align:center; border:1px solid #dcdcdd; padding:12px 0px; color:#383838; border-radius:50px; font-size:24px; position:relative; z-index:102}
+.rulesbox{width:100%; height:100%;left:0px;top:0px; position:fixed; display:block; z-index:103}
+.rulesbox .ns-close{width:50px; height:50px;right:30px;top:40px;}
+.rulesbox .ns-close:before,.rulesbox .ns-close:after{ background:#fff}
+.rulesbox .info{margin-top:340px; text-align:center}
+.rulesbox .info p{line-height:70px; font-size:26px; color:rgba(255,255,255,0.7)}
+.rulesbox .info span{background:url(http://static.appshike.com/images/invitephotodeck.png) no-repeat; width:64px; height:64px; display:inline-block; margin:60px auto 30px auto;}
+
+/**********邀请记录************/
+.Invite_options{ width:100%; background:#fff;text-align:center; margin-bottom:}
+.Invite_options span{ width:49.8%; text-align:center; color:#3d495c; padding:30px 0px;font-size:32px;display:block; float:left;margin:0px auto;-webkit-tap-highlight-color:transparent;}
+.Invite_options .now_invite{color:#3a90f4; border-bottom:#3a90f4 solid 5px;padding:30px 0px 25px 0px;font-weight:bold;}
+.Invite_options_info .display_none{ display:none}
+.Invite_options_info .invite_time{padding:25px 30px 10px 30px;display:block;font-weight:normal;font-size:24px;width: -moz-calc(100% - 60px);width: -webkit-calc(100% - 60px);width: calc(100% - 60px);}
+.Invite_options_info .invite_time span,.Invite_options_info .invite_time font{ color:#818181;font-weight:normal;font-size:24px; float:left;}
+.Invite_options_info .invite_time font{float:right;font-size:24px;}
+.Invite_options_info .No_record{ margin-top:20%; font-size:30px; text-align:center; width:100%;}
+.now_invite_list,.Invited_record{ background:#fff;border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; margin-bottom:10px;}
+.now_invite_list li{ border-bottom:1px solid #dddddd;}
+.now_invite_list li { margin-left:30px; padding:28px 30px 28px 0px;width: -moz-calc(100% - 60px);width: -webkit-calc(100% - 60px);width: calc(100% - 60px); display:block; float:left}
+.now_invite_list li .name{font-size:30px; color:#353535}
+.Invited_record li{ position:relative; width:100%;}
+.Invited_record li a{display:block;}
+.Invited_record li .list_info{ margin-left:30px; border-bottom:1px solid #dddddd; padding:28px 30px 28px 0px;width: -moz-calc(100% - 60px);width: -webkit-calc(100% - 60px);width: calc(100% - 60px); font-size:30px;}
+.Invited_record li .list_info .yq_name{ width:58%; display:inline-block;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:30px;}
+.Invited_record li .list_info .yq_state{ float:right;font-size:32px; padding-right:30px;color:#3a90f4}
+.now_invite_list li:last-child,.Invited_record li:last-child .list_info{border-bottom:none;}
+
+/*******邀请详情*******/
+.invite_details{ width:100%;}
+.invite_details .details_info{width:100%;}
+.invite_details .details_info li{width:100%; position:relative; float:left;}
+.invite_details .details_info li.borl4:before{content: '';height:100%; width:2px; background:#3a90f4; top:0px; left:5%; position:absolute;z-index:8}
+.invite_details .details_info li .time{ width:85%; padding:30px 5% 15px 10%;color:#818181; border-bottom:1px solid #ddd}
+.invite_details .details_info li .bor3a90f4:before{content: '';width:10px; height:10px;top:40%; left:5%; margin-left:-6px; border-radius:100%; position:absolute; border:2px solid #3a90f4; background:#fff;z-index:8; display:block;}
+.invite_details .details_info li .borw4:after{content: '';height:50%; width:2px; background:#3a90f4; top:50%; left:5%; position:absolute;z-index:5; margin-top:1px}
+.invite_details .details_info li .info{padding:30px 0px 30px 5%;border-bottom:1px solid #ddd; position:relative;background:#fff;width:95%;}
+.invite_details .details_info li .name{ width:75%;padding-left:5%;float:left;font-size:30px;font-weight: normal;}
+.invite_details .details_info li .money{ width:15%; padding-right:5%;font-size:30px; text-align:right;float:right; color:#3a90f4}
+.invite_details .Bonus_ending{ width:100%;position:relative;}
+.invite_details .Bonus_ending:after{content: '';height:50%; width:2px; background:#3a90f4; top:0px; left:5%; position:absolute;z-index:8}
+.invite_details .Bonus_ending:before{content: '';width:12px; height:12px;top:40%; left:5%; margin-left:-5px; border-radius:100%; background:#fff; background:#3a90f4;display:block; position:absolute; z-index:9}
+.invite_details .Bonus_ending .reward{padding:30px 5% 40px 10%; margin-bottom:30px; color:#3a90f4; font-size:30px}
+
+
+
+
+
+
+

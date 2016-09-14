@@ -1,0 +1,6 @@
+[ 2016-09-12T09:59:33+08:00 ] ::1 /project2/parttime/
+ERR: 模板不存在:./Application/Home/View/Layouts/layout.html
+
+[ 2016-09-12T09:59:47+08:00 ] ::1 /project2/parttime/index.php/Member
+ERR: 无法加载控制器:Member
+

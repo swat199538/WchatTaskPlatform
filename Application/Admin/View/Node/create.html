@@ -1,0 +1,82 @@
+<section id="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin-bottom:2px;">
+                    <h3 class="panel-title">
+                        添加节点
+                        <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Node/index')}">返回列表</a>
+                    </h3>
+                    <div class="actions pull-right">
+                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal form-border" method="post" action="{:U('Node/create')}" id="form">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">所属分类</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" name="pid">
+                                    <option value="0-0">顶级应用</option>
+                                    <?php if (!empty($selectLists)) : ?>
+                                        <?php foreach($selectLists as $item) : ?>
+                                            <option value="{$item['id']}-{$item['level']}"><?php echo str_repeat('&nbsp;&nbsp;', $item['level'] * 3) . $item['title'] ?></option>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">名称</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="name" value="{$data['name']}" placeholder="请填写角色的名称，只能是英文单词"/>
+                                <div class="help-block">{$error['name']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">描述</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="title" value="{$data['title']}" placeholder="请填写描述信息，只能是中文或英文"/>
+                                <div class="help-block">{$error['title']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">排序</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="sort" value="{$data['sort']?$data['sort']:1}" placeholder="请填写正整数，值越大，越靠前"/>
+                                <div class="help-block">{$error['sort']}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="manager-status">状态</label>
+                            <div class="col-sm-6" id="manager-status">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="status" id="optionsRadios1" value="1" {$data['status']|radioChecked=1,###,true} />
+                                        　可　用
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="status" id="optionsRadios2" value="0" {$data['status']|radioChecked=0,###} />
+                                        　禁　用
+                                    </label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="help-block">{$error['status']}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-6">
+                                <button type="submit" class="btn btn-parimary">提　交</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

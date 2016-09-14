@@ -1,0 +1,155 @@
+
+    <!--main content start-->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="margin-bottom:2px;">
+                            <h3 class="panel-title">
+                                <form action="{:U('Task/index')}" id="filterForm">
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" name="title"  placeholder="任务名称" />
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text"  class="form-control datepicker2" name="create_time" readonly placeholder="日期过滤"/>
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control" name="status" >
+                                        <option value="" selected>状态</option>
+                                        <option value="1" >待审核</option>
+                                        <option value="2" >审核驳回</option>
+                                        <option value="3" >进行中</option>
+                                        <option value="4" >暂停</option>
+                                        <option value="5" >完成</option>
+                                        <option value="6" >中止</option>
+                                    </select>
+                                </div>
+                                <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" onclick="submitFilter();">过滤任务</a>
+                                <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Task/publishTask')}">添加任务</a>
+                                </form>
+                            </h3>
+                            <div class="actions pull-right">
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>任务名称</th>
+                                            <th>任务单价</th>
+                                            <th>发布时间</th>
+                                            <th>开始时间</th>
+                                            <th>结束时间</th>
+                                            <th>人数限制</th>
+                                            <th>待审/驳回</th>
+                                            <th>已完成</th>
+                                            <th>放弃</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                            <foreach name="data" item="vo" >
+                                            <tr>
+                                                <td>{$vo.title}</td>
+                                                <td>￥:{$vo.price}</td>
+                                                <td>{$vo.create_time}</td>
+                                                <td>{$vo.start_time}</td>
+                                                <td>{$vo.end_time}</td>
+                                                <td>{$vo.quantity}</td>
+                                                <td>{$vo.audit_wait_count}/{$vo.audit_refuse_count}</td>
+                                                <td>{$vo.complete_count}</td>
+                                                <td>{$vo.abandon_count}</td>
+                                                <td>
+                                                    <if condition="$vo.status eq 1">待审合</if>
+                                                    <if condition="$vo.status eq 2">审核驳回</if>
+                                                    <if condition="$vo.status eq 3">进行中</if>
+                                                    <if condition="$vo.status eq 4">暂停</if>
+                                                    <if condition="$vo.status eq 5">完成</if>
+                                                    <if condition="$vo.status eq 6">中止</if>
+                                                </td>
+                                                <td class="exec">
+                                                    <if condition="$vo.status neq 5">
+                                                    <a href="{:U('Task/editTask',array('id'=>$vo['id']))}" class="dr_{$vo.id}"><i class="fa fa-edit">修改</i></a>
+                                                    <if condition="$vo.status eq 3">
+                                                        <a href="#" class="tr_{$vo.id}" onclick="pasueTask({$vo.id},'pasue')"><i class="fa fa-pause">暂停</i></a>
+                                                    </if>
+                                                    <if condition="$vo.status eq 4">
+                                                        <a href="#" onclick="pasueTask({$vo.id},'start')" class="tr_{$vo.id}"><i class="fa fa-play">开始</i></a>
+                                                    </if>
+                                                    <a href="{:U('Task/addTask',array('id'=>$vo['id']))}"><i class="fa fa-plus">新增</i></a>
+                                                    <a href="{:U('Task/logTask',array('id'=>$vo['id']))}"><i class="fa fa-reorder">流水</i></a>
+                                                    <a href="{:U('Task/pictureTask',array('id'=>$vo['id']))}"><i class="fa fa-picture-o">截图</i></a>
+                                                    <a href="{:U('Task/expediteTask',array('id'=>$vo['id']))}"><i class="fa fa-exclamation">加急</i></a>
+                                                    </if>
+                                                </td>
+                                            </tr>
+                                            </if>
+                                            </foreach>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pages">
+                                <?php echo $pageStr ?>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script>
+        function pasueTask(tid,action) {
+            var name=".tr_"+tid;
+            var sname=".dr_"+tid;
+            $.post(
+                    '{:U("Task/pasueTask","",false)}',
+                    {
+                        id:tid,
+                        act:action
+                    },
+                    function ($this) {
+                        if ($this==200) {
+                            $(name).remove();
+                            $(sname).append(
+                                    "<a href='#' onclick=\"pasueTask("+tid+",'start')\" class='tr_"+tid+"'><i class='fa fa-play'>开始</i></a>"
+                            );
+                        }
+                        if ($this==300){
+                            $(name).remove();
+                            $(sname).after(
+                                    "<a href='#' onclick=\"pasueTask("+tid+",'pasue')\" class='tr_"+tid+"'><i class='fa fa-pause'>暂停</i></a>"
+                            );
+                        }
+                        if($this==404){
+                            alert('你没有权限');
+                        }
+                        if($this==500){
+                            alert('操作失败');
+                        }
+                        if($this==202){
+                            alert('账号余额不足，无法开始任务');
+                        }
+                    }
+            );
+        }
+
+        function submitFilter() {
+                $("#filterForm").submit();
+        }
+
+        $(function () {
+            $("#firstLi").removeClass("active");
+            $("#secondLi").addClass("active");
+        })
+
+
+    </script>

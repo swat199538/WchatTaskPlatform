@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+.NewTutorial_deck,.Perfect_information_deck,.try_deck,.invite_deck,.withdraw_deck,.remind_deck,.editor_deck,.change_phone_deck,.er_code_deck,.password_deck,.sK_reward_deck,.cash_cow_deck,.cinsurance_deck,.bd_wechat,.bd_alipay,.drawing_deck{background:url(http://static.appshike.com/images/smill_deckicon.png) no-repeat;width:46px;height:55px;display:block;float:left; margin-top:20px;}
+/******提现与充值 状态********/
+.present_state{padding:120px 0px 50px 0px;text-align:center; width:90%; margin:0  auto;}
+.present_state p{width:100%;}
+.present_state .stateimg{ width:100%; text-align:center;}
+.present_state .mobile{ width:100%;text-align:center;color:rgba(58,144,244,0.5); margin-top:20px;font-size:28px;}
+.present_state .present_amount{ font-size:36px; width:100%; text-align:center;color:rgba(58,144,244,1); margin:20px 0px;}
+.present_state .arrive_account_time{ font-size:28px; color:#9c9c9c}
+.present_state .View_cash_Records{ width:68%; font-size:30px;background:#3a90f4; display:inline-block; color:#fff; padding:25px 0px; text-align:center; margin:30px 0px; border-radius:8px;}
+.present_state .View_cash_Records.brc{background-color:rgba(58,144,244,0.8);}
+
+/*猜你喜欢160802*/
+.guess_like{position:absolute;bottom:100px;left: 0px;width: 100%;height: 218px;text-align: center;}
+.guess_like.w1:after{content:"";position:absolute;bottom:0px;left:0px;width: 100%;height:96px;background:url(http://static.appshike.com/images/guess_u_like_wave.png) no-repeat center bottom;background-size: cover;}
+.guess_like.w2 .invite,.guess_like.w2 .Recharge,.guess_like.w2 .try_play{width: 50%;float: left;}
+.guess_like.w3 .invite,.guess_like.w3 .Recharge,.guess_like.w3 .try_play{width:33.333%;float: left;}
+.guess_like .invite{ background-color:#0aa0ff;position: relative;}
+.guess_like .Recharge{background-color: #3b5aff;position: relative;}
+.guess_like .try_play{background-color: #7b25e8;position: relative;}
+.guess_like .invite:after,.guess_like .Recharge:after,.guess_like .try_play:after{content:"";position:absolute;top:-8px;left:5%;width: 90%;height:8px;opacity: 0.2;display: block;}
+.guess_like .invite:after{background-color: #0aa0ff;}
+.guess_like .Recharge:after{background-color: #3b5aff;}
+.guess_like .try_play:after{background-color: #7b25e8;}
+.guess_like .conten{width: 100%;text-align: center;height:100px;margin-top: 15px;}
+.guess_like .conten,.invitedeck_b,.Unicomdeck_b,.Movedeck_b,.Telecomdeck_b,.trydeck_b{background: url(http://static.appshike.com/images/guess_u_like.png) no-repeat center top;}
+.guess_like .conten h5{font-size:48px;font-weight: 500;color: #ffffff;margin-top:18px;}
+.guess_like .conten p{font-size:18px;font-weight: 300;opacity: 0.5;text-align: center;color: #ffffff;}
+.guess_like .invitedeck_b{background-position-y:-784px;width:206px;height: 86px;display:inline-block;margin:10px auto 0px auto;overflow: hidden;}
+.guess_like .Unicomdeck_b{background-position-y:-304px;width:206px;height: 86px;display:inline-block;margin:10px auto 0px auto;overflow: hidden;}
+.guess_like .Movedeck_b{background-position-y:-625px;width:206px;height: 86px;display:inline-block;margin:10px auto 0px auto;overflow: hidden;}
+.guess_like .Telecomdeck_b{background-position-y:-466px;width:206px;height: 86px;display:inline-block;margin:10px auto 0px auto;overflow: hidden;}
+.guess_like .trydeck_b{background-position-y:-146px;width:206px;height: 86px;display:inline-block;margin:10px auto 0px auto;overflow: hidden;}
+.guess_like .waveRaidus{position:relative;width: 86px;height: 86px;display:inline-block;margin: 0 auto;}
+.guess_like .waveRaidus:before{content:"";width:8.3px;height:8.3px;border-radius: 100%;border: solid 4px #ffffff;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+.guess_like .waveRaidus:after{content:"";margin-top: 4px;opacity: 0;position: absolute;left: 50%;top: 45%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);-webkit-animation: waveRaidus 1.8s ease-out 0s infinite;animation: waveRaidus 1.8s ease-out 0s infinite;border: 3px solid rgba(255,255,255,.8);border-radius: 100%;}
+@-webkit-keyframes waveRaidus {
+    0% {
+        width: 0%;height: 0%;
+        opacity: 0;
+    }
+    30% {
+        width: 0%;height: 0%;
+        opacity:0;
+    }
+    31% {
+        width: 40%;height: 40%;
+        opacity: 0.5;
+    }
+    100% {
+        width: 100%;height: 100%;
+        opacity: 0;
+    }
+}
+
+/*******手机验证******/
+.phone_check{ width:100%; text-align:center;}
+.phone_check .phone_img{ margin:10% 0px; width:100%;text-align:center;}
+.phone_check .phone_test{width:80%; margin:40px auto;}
+.phone_check .phone_test .phone,.phone_check .phone_test .test{width: -moz-calc(100% - 40px);width: -webkit-calc(100% - 40px);width: calc(100% - 40px);background:#e6e6e6;padding:10px 10px 10px 30px; margin-bottom:20px;border-radius:8px;}
+.phone_check .phone_test .phone input{ width:100%; height:69px;font-size:26px; color:#a4a4a4;border:0px; background:transparent}
+.phone_check .phone_test .test .sending{ width:188px; text-align:center; font-size:24px;height:70px; line-height:70px;display:inline-block; background:#fff;color:#3a90f4;border-radius:8px;box-shadow:0px 0px 30px rgba(0,0,0,0.1); font-weight:bold; border:0px;}
+.phone_check .phone_test .test .sending.brc{ opacity:0.5;}
+.phone_check .phone_test .test .sending.ban{ color:#cd3027;}
+.phone_check .phone_test .test input{width: -moz-calc(100% - 188px);width: -webkit-calc(100% - 188px);width: calc(100% - 188px);font-size:26px; float:left; height:70px; border:0px;background:transparent}
+.phone_check .phone_test .phone input.error::-webkit-input-placeholder,.phone_check .phone_test .test input.error::-webkit-input-placeholder{color:#fe5555;}
+.phone_check .btn_submit{ width:70%; font-weight:bold; display:inline-block; margin:30px 0px;text-align:center; padding:25px 0px; color:#fff; font-size:34px; background:#3a90f4; border-radius:8px;}
+.phone_check .btn_submit.brc{ opacity:0.5;}
+.speech_verification{width: 100%;text-align: center;margin: 10px 0px 30px 0px;}
+.speech_verification span{color:#3b90f5;font-size: 24px;padding-left:34px;position:relative}
+.speech_verification span:after{position:absolute;content: "";width:18px;height:26px;display: inline-block;top:3px;left:0px;background: url(http://static.appshike.com/images/Icon13.png) no-repeat;}
+.speech_verification span:active,.speech_verification span.Sendout{color: #ddd;}
+.speech_verification span:active,.speech_verification span.Sendout:after{background: url(http://static.appshike.com/images/h_Icon13.png) no-repeat;}
+/*****提现*****/
+.choose_tixian{width:100%; background:#fff;}
+.choose_tixian .withdraw_way{width:50%;padding:30px 0px;text-align:center;font-size:32px;color:#3d495c; display:inline-block; float:left;-webkit-tap-highlight-color:transparent;}
+.choose_tixian span.now{ border-bottom:6px solid #3a90f4;color:#3a90f4;padding:30px 0px 26px 0px;font-weight:bold;}
+.prepaid_traffic{width:100%; margin:5% auto}
+.prepaid_traffic .phone_flow{ background:#fff;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+.prepaid_traffic .phone_flow .phone{border-bottom:1px solid #e6e6e6;padding:30px 30px 30px 125px;position:relative;}
+.prepaid_traffic .phone_flow .phone::before{content: '';background:url(http://static.appshike.com/images/smill_deckicon.png) no-repeat;width:34px;height:44px;display:block;position:absolute;top:55px;left:50px;z-index:88}
+.prepaid_traffic .phone_flow .phone input{color:#3d495c;font-size:48px;border:0px;background:transparent}
+.prepaid_traffic .phone_flow .phone p{color:#9c9c9c; font-size:28px;}
+.prepaid_traffic .phone_flow .flow{position:relative; padding:30px;}
+.prepaid_traffic .phone_flow .flow label{font-size:30px;color:#3d495c}
+.prepaid_traffic .phone_flow .flow .select_flow{position:absolute;left:0px;top:0px;font-size:30px;width:100%;background:transparent;height:95px;direction:rtl;border:0px;outline:none;-webkit-tap-highlight-color:transparent; padding-right:60px; color:#3a90f4;}
+.now_hide{ display:none}
+.tixian_content .tips{ width:90%; padding:20px 5%;}
+.tixian_content .tips p{ font-size:24px; color:#969ca5;line-height:36px;}
+.tixian_content .tips p label{color:#3a90f4; font-size:24px;}
+.tixian_content .btn_tixian{width:100%;text-align:center;margin:50px auto;}
+.tixian_content .btn_tixian a{display:inline-block;width:70%;margin:10px auto;font-size:32px;padding:25px 0px;text-align:center;background:#fff;border:1px solid #e6e6e6;border-radius:8px; color:#3a90f4; font-weight:bold;}
+.tixian_content .btn_tixian .btn2{color:#3d495c}
+.tixian_content a.brc{background-color:rgba(0,0,0,0.1);}
+.tixian_content .Status{padding:6% 3% 4% 3%; text-align:center;}
+.tixian_content .box{width:46%;padding:30px 0px;border-radius:8px; background:#699cd7;margin:0px 2%;float:left;}
+.tixian_content .box span,.tixian_content .box p{width:100%;font-size:30px;color:#fff; display:block; line-height:40px;text-align:center;}
+.tixian_content .box.bgc4caae0{ background-color:#4caae0}
+.tixian_content .box p{color:rgba(255,255,255,0.5);font-size:24px;}
+.withdraw_cash{margin:5% 0px;}
+.withdraw_cash .cash_info{ width:100%;border-top:1px solid #ddd; background:#fff;}
+.withdraw_cash .cash_info div{padding:30px;position:relative; border-bottom:1px solid #ddd}
+.withdraw_cash .cash_info div label{font-size:30px;color:#3d495c}
+.withdraw_cash .cash_info .RMB,.withdraw_cash .cash_info .goal{position:absolute;left:0px;top:0px;width:100%;background:transparent;height:95px;direction:rtl;unicode-bidi:embed;font-size:30px; border:0px;outline:none;-webkit-tap-highlight-color:transparent; padding-right:60px; color:#3a90f4;}
+.withdraw_cash .cash_info .goal{color:#878787;}
+.withdraw_cash .cash_info .RMB{font-size:48px;}
+/******提现弹层******/
+.recharge-head,.password-head,.binding-head{ background:#e6e6e6 url(http://static.appshike.com/images/msg_deckbj.png) no-repeat center; width:100%; height:70px;padding-bottom:30px;line-height:70px;font-size:32px; font-weight:normal; color:#7f7f7f}
+.recharge-head{background-position:center -150px;}
+.password-head{background-position:center 10px;}
+.recharge_info{width:66%; margin:0px auto 50px  auto;}
+.recharge_info li{padding:20px 0px; border-bottom:1px solid #e6e6e6}
+.recharge_info li:last-child{border-bottom:transparent}
+.recharge_info li label{ width:150px;color:#7f7f7f; font-size:28px;}
+.recharge_info li span{color:#3990f4; font-size:28px;}
+
+.binding-head{background-position:center -295px;color:#fff}
+.binding-head.wechatbj{background-color:#48b960;}
+.binding-head.alipaybj{background-color:#3990f4;}
+.password_tit{font-size:28px; line-height:46px;color:#3d495c; text-align:center;}
+.password_entry,.card_info{text-align:center; margin:30px 0px 10px 0px;}
+.password_entry input,.card_info input{text-align:center; width:80%; padding:25px 0px; border:1px solid #e6e6e6;font-size:30px;}
+.binding_card{ width:100%;}
+.binding_card .bt{font-size:28px;color:#3d495c;text-align:center; line-height:40px;}
+.binding_card .alipay_tutorial{font-size:28px;color:#3a90f4}
+.binding_card .wechat_tutorial{font-size:28px;color:#48b960}
+.binding_close.ns-close::before,.binding_close.ns-close::after{content: '';position: absolute;width: 4px;height:100%;top: 50%;left: 50%;background: #fff;}
+.binding_phone .send{ width:36%; vertical-align:top; border:1px solid #e6e6e6; padding:25px 0px; font-size:30px; text-align:center; display:inline-block; background:#fff;}
+.binding_phone .send.ARQ{ background:#b7b7b7; color:#fff}
+.binding_phone .col48b960{color:#48b960}
+.binding_phone .col169bf8{color:#169bf8}
+.binding_phone .send.brc{ opacity:0.8}
+
+.range_term{ width:100%; height:560px; overflow-y:auto;border-top:1px solid #ddd; border-bottom:1px solid #ddd}
+.range_term li{ width:100%}
+.range_term li label{ width:120px; text-align:center; float:left;font-size:30px; padding:20px 0px;}
+.ns-box-inner .range_term li p{width: -moz-calc(100% - 162px);width: -webkit-calc(100% - 162px);width: calc(100% - 162px); border-left:2px solid #ddd; border-bottom:2px solid #ddd;float:left; padding:20px;font-size:30px;line-height:50px;}
+.range_term li:last-child p{border-bottom:0px;}
+
+   /******绑定******/
+.alipay_icon,.wechat_icon{ background:url(./../img/big_deckicon.png) no-repeat;}
+.bindinglist{ width:100%; border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6; background:#fff; margin:40px 0px;}
+.bindinglist li{width:96%;padding-left:4%; position:relative; float:left}
+.bindinglist li .info{width: -moz-calc(100% - 136px);width: -webkit-calc(100% - 136px);width: calc(100% - 136px);padding:30px 60px 30px 0px;margin-left:30px;float:left; font-size:30px; color:#3d495c}
+.bindinglist li .info .r{ font-size:30px; color:rgba(135,135,135,0.6);}
+.bindinglist li .password_deck{ background-position:0px -59px;}
+
+.binding_info{width:100%;}
+.binding_info .alipay{width:50%; background-color:#3888e6;height:260px;padding-top:40px; float:left;}
+.binding_info .wechat{width:50%; background-color:#48b960;height:260px;padding-top:40px;float:right}
+.binding_info .Click_bj.brc{ opacity:0.9;}
+.binding_info .alipay_icon{width:100%; height:54px; display:block; background-position: center top;}
+.binding_info .wechat_icon{width:100%; height:57px; display:block; background-position: center -84px;}
+.binding_info .bd_name{font-size:30px; color:#fff; width:100%;text-align:center; margin-top:32px; font-weight:normal}
+.binding_info .bd_name .add{width:100%;text-align:center;font-size:30px; margin-top:15px; color:rgba(255,255,255,0.5)}
+.binding_info .bd_account{width:100%;font-size:22px;color:rgba(255,255,255,0.7);text-align:center}
+.binding_info .modify{ width:50%;font-size:22px;text-align:center;border-top:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);margin:32px auto 10px auto; padding:20px 0px; display:block}
+
+.step_ts{width:100%; overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.step_ts .w_lit{width:800px; float:left}
+.step_ts .w_lit img{ margin-right:20px;float:left;}
+.step_ts .ali_lit{ width:660px; float:left;}
+.Forgot_Password{width:100%;font-size:24px; color:#3a90f4; margin:0px auto; text-align:center}
+.Forgot_Password.brc{ background:transparent; opacity:0.8;}
+/*****提现记录****/
+.tx_record{ width:100%;}
+.record_info .time{ width:90%; font-size:24px; padding:20px 30px 0px 30px; line-height:55px;float:left; color:#9c9c9c}
+.record_list{width:100%;margin-bottom:10px;float:left;border-bottom:1px solid #e6e6e6;border-top:1px solid #e6e6e6; background:#fff;}
+.record_list li{float:left; width:100%;}
+.record_list li .lit{ margin-left:4%;padding:30px 0px; width:96%;border-bottom:1px solid #e6e6e6;}
+.record_list li label{font-size:30px;}
+.record_list li .record_state{float:right; color:#878787; font-size:30px; padding-right:30px;}
+.record_list li .record_state span{display:inline-block;width:124px;padding:4px 0px;background:#f30;color:#fff;text-align:center; margin-left:15px;float:right;border-radius:20px}
+.record_list li .record_state .bagef8d3e{background-color:#ef8d3e}
+.record_list li .record_state .bag3a90f4{background-color:#3a90f4}
+.record_list li .record_state .bageb6464{background-color:#eb6464}
+.record_list li:last-child{border-bottom:transparent}
+
+
+.extract_title{width:100%; background:#f9f9f9; text-align:center; font-size:24px; padding:15px 0px; color:#6c6c6c; font-weight:normal;}
+.extract_record_info{ width:100%}
+.extract_record_info .money{font-size:60px; padding-bottom:30px; color:#3a90f4;float:left; position:relative}
+.extract_record_info .money:after{content: '';position: absolute;bottom:0px; left:0px; width:40%; height:1px; border-bottom:1px solid #e2e2e2}
+.extract_record_info .money font{font-size:40px; color:#3a90f4; margin-left:15px;}
+.extract_record_info p.time{color:rgba(0,0,0,0.5); width:180px; display:inline-block; font-size:24px;float:right;}
+.extract_record_info .time span{font-size:28px; margin-top:10px; display:inline-block;color:rgba(0,0,0,0.5)}
+.trace{margin-top:35px;}
+.trace p{margin-bottom:35px; font-size:24px; color:rgba(0,0,0,0.5)}
+.trace .alipay,.trace .WeChat,.trace .Phone{ background:url(http://static.appshike.com/images/smill_deckicon.png) no-repeat; color:#3a90f4; padding-left:65px; line-height:42px;}
+.trace .alipay{ background-position:0px -1030px;}
+.trace .WeChat{background-position:0px -1148px;}
+.trace .Phone{background-position:0px -1087px;}
+/******其他收入*****/
+.other_revenue{width:100%;border-bottom:1px solid #e6e6e6;border-top:1px solid #e6e6e6; background:#fff; margin-top:40px;}
+.other_revenue li{width:96%;padding-left:4%;position:relative;float:left;}
+.other_revenue li .NewTutorial_deck{background-position:0px -115px;}
+.other_revenue li .sK_reward_deck{background-position:0px -720px;}
+.other_revenue li .cash_cow_deck{background-position:0px -649px;}
+.other_revenue li .cinsurance_deck{background-position:0px -525px;}
+.other_revenue li .Perfect_information_deck{background-position:0px -185px;width:46px;height:58px;display:block;float:left; margin-top:15px;}
+.other_revenue li .other_revenue_info{border-bottom:1px solid #e6e6e6;padding:30px 60px 30px 0px;width: -moz-calc(100% - 136px);width: -webkit-calc(100% - 136px);width: calc(100% - 136px);float:left;margin-left:30px;font-size:30px; color:#3d495c}
+.other_revenue li .other_revenue_info .money{float:right;font-size:30px;color:#cccccc}
+.other_revenue li:last-child .other_revenue_info{border-bottom:transparent;}
+
+
+/******个人中心 收入查询********/
+.myinfo_list{width:100%;border-bottom:1px solid #e6e6e6;border-top:1px solid #e6e6e6; background:#fff; margin-bottom:40px; background:#fff;}
+.myinfo_list li{width:96%;padding-left:4%;position:relative;float:left;}
+.myinfo_list li a{ width:100%; display:block;background:#f30;}
+.myinfo_list li .info{width: -moz-calc(100% - 136px);width: -webkit-calc(100% - 136px);width: calc(100% - 136px);border-bottom:#e6e6e6 solid 1px;padding:30px 60px 30px 0px;margin-left:30px;float:left;}
+.myinfo_list li .info .name{color:#3d495c;font-size:30px; float:left}
+.myinfo_list li .info .r{ font-size:30px; color:#cccccc; float:right;}
+.myinfo_list li .info .r.col3a90f4{color:#3a90f4}
+.myinfo_list li .drawing_deck{ background-position:0px -952px;}
+.myinfo_list li .try_deck{ background-position:0px -257px;}
+.myinfo_list li .invite_deck{background-position:0px -330px;}
+.myinfo_list li .withdraw_deck{background-position:0px -402px;}
+.myinfo_list li .remind_deck{background-position:0px -462px;}
+.myinfo_list li .editor_deck{background-position:0px -522px;}
+.myinfo_list li .change_phone_deck{background-position:5px 8px;}
+.myinfo_list li:last-child .info{border-bottom:transparent;}
+
+.myinfo_list li .Star5{background: url(http://static.appshike.com/images/Star5.png)no-repeat;width:46px;height:44px;float: left;margin-top: 25px;display: inline-block;}
+/*.myinfo_list li .my_medal{text-align: right;}*/
+.myinfo_list li .my_medal span{display: inline-block;height: 42px;margin-left: 20px;background: url(http://static.appshike.com/images/sk_medalicon.png)no-repeat 0px 0px;background-size:auto 1100%;float: right;}
+.myinfo_list li .my_medal .ash{background-position-x:-78px}
+.myinfo_list li .my_medal .binding_medal{background-position:-5px 5px;width:30px;}/*完成绑定*/
+.myinfo_list li .my_medal .freecharge_medal{background-position:0px -44px;width:38px;}/*试玩免费应用*/
+.myinfo_list li .my_medal .paycharge_medal{background-position-y:-92px;width:38px;}/*试玩付费应用*/
+.myinfo_list li .my_medal .withdrawals_medal{background-position-y:-138px;width:36px;}/*完成一次提现*/
+.myinfo_list li .my_medal .flow_medal{background-position-y:-186px;width:36px;}/*充值一次流量*/
+.myinfo_list li .my_medal .invitefriends_medal{background-position-y:-233px;width:36px;}/*邀请一位好友*/
+.myinfo_list li .my_medal .share_medal{background-position-y:-280px;width:35px;}/*朋友圈分享*/
+.myinfo_list li .my_medal .inviteincome_medal{background-position-y:-329px;width:36px;}/*获得邀请收入*/
+.myinfo_list li .my_medal .incomehundred_medal{background-position-y:-376px;width:36px;}/*邀请收入过百*/
+.myinfo_list li .my_medal .ranking_medal{background-position-y:-423px;width:36px;}/*排行榜成就*/
+
+.my_income{background:#66adff;width: -moz-calc(100% - 60px);width: -webkit-calc(100% - 60px);width: calc(100% - 60px);border-radius:8px; margin:30px; overflow:hidden; text-align:center}
+.my_income .income_collect{ width:100%;background:url(http://static.appshike.com/images/my_incomeimg.png) repeat-x left bottom;}
+.my_income .income_collect .tit{font-size:26px; width:100%; padding-top:30px; text-align:center;color:rgba(255,255,255,0.5)}
+.my_income .income_collect .collect_money{font-size:55px; display:block; margin:20px 0px 55px 0px; color:#fff; text-align:center; width:100%;text-shadow:4px 1px 0px #3a90f4; font-weight:normal}
+.my_income .income_condition{ background:#3a90f4;padding:40px 0px;}
+.my_income .income_condition .moneyinfo:before{ content:""; width:2px; height:36px; position:absolute; right:0px; top:25%;display:block; background:rgba(255,255,255,0.6); z-index:8}
+.my_income .income_condition .moneyinfo:last-child.moneyinfo:before{content:""; width:0px;}
+.my_income .income_condition .moneyinfo{ width:50%;text-align:center; float:left; position:relative;}
+.my_income .income_condition.income3 .moneyinfo{width:33.3333%;}
+.my_income .income_condition .moneyinfo h4{ font-size:32px; width:100%; margin-bottom:12px;font-weight:normal;color:#fff;}
+.my_income .income_condition .moneyinfo p{color:rgba(255,255,255,0.5);font-size:24px;}
+.income_query .btn_submit button{margin:20px auto 50px auto;height:89px; border-radius:8px; background:#ffffff; font-size:32px; border:1px solid #e6e6e6;padding:24px 0px; width:60%; display:block; color:#3a90f4; font-weight:bold}
+.income_query .btn_submit button.brc{ background:#3a90f4; color:#fff;}
+
+.individualism{width:94%; margin:40px 3%; position:relative;z-index:100}
+.individualism .my_photo{width:40%;margin-right:30px; text-align:right;}
+.individualism .my_photo img{width:140px; height:140px; border-radius:100px;}
+.individualism .myinfo{-webkit-box-shadow:0px 0px 10px #dedede; background:#fff; padding:40px 4%; border-bottom:10px solid #6aadfb; width:92%; border-radius:8px;}
+.individualism .myinfo .tit{width:54%;float:left; margin-top:25px;}
+.individualism .myinfo .my_name{font-size:36px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; height:50px;}
+.individualism .myinfo .my_name img{height:100%}
+.individualism .myinfo .my_ID{ font-size:28px;}
+.individualism .my_er_code{width:90%; margin:0px auto;text-align:center; position:relative; height:78px;}
+.individualism .my_er_code .er_code_deck{padding-left:50px; background-position:0px -600px; color:rgba(255,255,255,0.6);margin:20px auto; font-size:26px; line-height:55px; display:inline-block; width:auto; height:38px; line-height:38px; float:none; position:relative}
+.individualism .my_er_code .click_ercode{border-radius:0px 0px 8px 8px;background:url(http://static.appshike.com/images/er_code_deckbj.png) repeat-x left bottom #3a90f4;-webkit-transition:300ms;-moz-transition:300ms;-ms-transition:300ms;-o-transition:300ms;transition:300ms;height:78px; overflow:hidden;}
+.individualism .my_er_code .click_ercode.h{height:0px;}
+.individualism .my_er_code .click_ercode.brc{background-color:#175bbf;}
+.individualism .develop_ERCode{position:absolute; top:0px; width:100%; height:0px;text-align:center;z-index:900; border-radius:0px 0px 8px 8px; background:url(http://static.appshike.com/images/er_code_deckbj.png) repeat-x left bottom #3a90f4; overflow:hidden;-webkit-transition:800ms;-moz-transition:800ms;-ms-transition:800ms;-o-transition:800ms;transition:800ms;}
+.my_er_code .develop_ERCode.h{height:612px;-webkit-transition:800ms;-moz-transition:800ms;-ms-transition:800ms;-o-transition:800ms;transition:800ms;}
+.develop_ERCode .ERCode_img{margin-top:50px;}
+.develop_ERCode .ERCode_img img{ width:250px; height:250px;}
+.develop_ERCode .tit1{color:#fff; margin:32px 0px 15px; font-size:24px;}
+.develop_ERCode .tit2{color:#175bbf;font-size:18px;}
+.develop_ERCode .ERCode_upgrade{border-radius:8px; border:0px; background:#175bbf; font-size:24px; margin:30px 0px 60px 0px;padding:18px 0px; width:250px;color:rgba(255,255,255,0.8)}
+.develop_ERCode .ERCode_upgrade.brc_col2570d4{ background:#2570d4; color:#3a90f4}
+.develop_ERCode .ERCode_upgrade.brc{opacity:0.6}
+.my_er_code .develop_ERCode .stop{display:block; width:40px; height:20px; position:relative; margin:0px auto 30px auto;}
+.my_er_code .develop_ERCode .stop::before,.develop_ERCode .stop::after{content: '';position: absolute;width:5px;height:100%;background:#175bbf; border-radius:8px;}
+.my_er_code .develop_ERCode .stop::before{-webkit-transform:rotate(-60deg);left:50%;top:5%;}
+.my_er_code .develop_ERCode .stop::after{-webkit-transform:rotate(60deg);left:16%; top:10%}
+.my_tinymask{z-index: 99; display:none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px;position:fixed; background-color:rgba(0,0,0,0.02);}
+
+
+.binding_box{width:100%; height:0px; text-align:center; bottom:0px;left:0px;z-index:820;overflow:hidden;position:fixed; background:#fff;-webkit-transition:400ms;-moz-transition:400ms;-ms-transition:400ms;-o-transition:400ms;transition:400ms;}
+.binding_box.h{ height:454px;-webkit-transition:400ms;-moz-transition:400ms;-ms-transition:400ms;-o-transition:400ms;transition:400ms;}
+.pt60_pb10{padding:60px 0px 10px;}
+.binding_box p{ width:80%; text-align:center; display:block;padding:30px 0px; margin:0px auto 30px auto;font-size:32px;color:#8d8d8d;}
+.binding_box p span{font-size:32px; padding-left:65px; color:#fff; display:inline-block; width:auto; margin:0 auto;width:auto;height:auto;float: none;}
+.binding_box .bd_wechat{ background-position:0px -800px}
+.binding_box .bd_alipay{background-position:0px -865px}
+.binding_box .bd_wechat_btn{ background-color:#48b960}
+.binding_box .bd_alipay_btn{ background-color:#3888e6}
+.binding_box .Click_bj.brc{ opacity:0.8;}
+/*************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

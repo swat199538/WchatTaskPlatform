@@ -1,0 +1,66 @@
+
+    <!--main content start-->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="margin-bottom:2px;">
+                            <h3 class="panel-title">
+                                管理员列表
+                                <a type="button" style="margin-left:2%;" class="btn btn-success active" role="botton" href="{:U('Manager/create')}">添加管理员</a>
+                            </h3>
+                            <div class="actions pull-right">
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>用户名</th>
+                                            <th>Email</th>
+                                            <th>备注</th>
+                                            <th>最后登入时间</th>
+                                            <th>最后登入IP</th>
+                                            <th>用户状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <?php if (!empty($data)) : ?>
+                                        <?php foreach($data as $item) : ?>
+                                            <tr>
+                                                <td><?php echo ++$no ?></td>
+                                                <td><?php echo $item['username'] ?></td>
+                                                <td><?php echo $item['email'] ?></td>
+                                                <td><?php echo $item['remark'] ?></td>
+                                                <td><?php echo empty($item['last_logged_at']) ? '未登入' : date('Y-m-d H:i', $item['last_logged_at']) ?></td>
+                                                <td><?php echo empty($item['last_logged_ip']) ? '无' : long2ip($item['last_logged_ip']) ?></td>
+                                                <td><?php echo empty($item['status']) ? '禁用' : '可用' ?></td>
+                                                <td class="exec">
+                                                    <a href="{:U('Manager/update', array('id' => $item[id]))}"><i class="fa fa-edit"></i></a>
+                                                    <a href="{:U('Manager/toConfigure', array('id' => $item[id]))}" title="配置角色"><i class="fa fa-cogs"></i></a>
+                                                    <a class="del" data-del="{:U('Manager/delete', array('id' => $item[id]))}" href="javascript:void(0)"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php else : ?>
+                                        <div class="help-block">没有任何数据</div>
+                                    <?php endif; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pages">
+                                <?php echo $pageStr ?>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>

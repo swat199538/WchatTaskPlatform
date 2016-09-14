@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理系统</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{$Think.const.ADMIN_IMG_URL}favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_PLUGIN_URL}bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}/bootstrap-datetimepicker.min.css">
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}font-awesome.min.css">
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}simple-line-icons.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}animate.css">
+    <!-- Daterange Picker -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_PLUGIN_URL}daterangepicker/daterangepicker-bs3.css">
+    <!-- Calendar demo -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}clndr.css">
+    <!-- Switchery -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_PLUGIN_URL}switchery/switchery.min.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}main.css">
+    <link rel="stylesheet" href="{$Think.const.ADMIN_CSS_URL}common.css">
+    <link href="{$Think.const.ADMIN_CSS_URL}style.css" rel="stylesheet" type="text/css">
+    <!-- Feature detection -->
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/html5shiv.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/respond.min.js"></script>
+    <![endif]-->
+    <!--Global JS-->
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/jquery-1.11.1.min.js"></script>
+    <script src="{$Think.const.ADMIN_PLUGIN_URL}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{$Think.const.ADMIN_PLUGIN_URL}navgoco/jquery.navgoco.min.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/bootstrap-datetimepicker.min.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}vendor/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="{$Think.const.ADMIN_PLUGIN_URL}pace/pace.min.js"></script>
+    <script src="{$Think.const.ADMIN_JS_URL}src/app.js"></script>
+</head>
+
+<body>
+
+<section id="main-wrapper" class="theme-default">
+    <header id="header">
+        <!--logo start-->
+        <div class="brand">
+            <a href="index.html" class="logo">
+                <i class="icon-layers"></i>
+                <span>NEU</span>BOARD</a>
+        </div>
+        <!--logo end-->
+        <ul class="nav navbar-nav navbar-left">
+            <li class="toggle-navigation toggle-left">
+                <button class="sidebar-toggle" id="toggle-left">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </li>
+            <li class="toggle-profile hidden-xs">
+                <button type="button" class="btn btn-default" id="toggle-profile">
+                    <i class="icon-user"></i>
+                </button>
+            </li>
+            <li class="hidden-xs">
+                <input type="text" class="search" placeholder="Search project...">
+                <button type="submit" class="btn btn-sm btn-search"><i class="fa fa-search"></i>
+                </button>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown profile hidden-xs">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="meta">
+                            <span class="avatar">
+                                <img src="{$Think.const.ADMIN_IMG_URL}profile.jpg" class="img-circle" alt="">
+                            </span>
+                        <span class="text">{$Think.session.partner.username}</span>
+                        <span class="caret"></span>
+                        </span>
+                </a>
+                <ul class="dropdown-menu animated fadeInRight" role="menu">
+                    <li>
+                        <span class="arrow top"></span>
+                        <h5>
+                            <span>80%</span>
+                            <small class="text-muted">Profile complete</small>
+                        </h5>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar" style="width: 80%">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-user"></i>
+                                </span>My Account</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-envelope"></i>
+                                </span>Messages</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Index/resetPassword')}">
+                                <span class="icon"><i class="fa fa-cog"></i>
+                                </span>修改密码</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="{:U('Index/logout')}">
+                                <span class="icon"><i class="fa fa-sign-out"></i>
+                                </span>登　出</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="toggle-navigation toggle-right">
+                <button class="sidebar-toggle" id="toggle-right">
+                    <i class="fa fa-indent"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+
+    <aside class="sidebar sidebar-left">
+        <div class="sidebar-profile">
+            <div class="avatar">
+                <img class="img-circle profile-image" src="{$Think.const.ADMIN_IMG_URL}profile.jpg" alt="profile">
+                <i class="on border-dark animated bounceIn"></i>
+            </div>
+            <div class="profile-body dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <h4>{$Think.session.partner.username} <span class="caret"></span></h4>
+                </a>
+                <small class="title">Front-end Developer</small>
+                <ul class="dropdown-menu animated fadeInRight" role="menu">
+                    <li class="profile-progress">
+                        <h5>
+                            <span>80%</span>
+                            <small>Profile complete</small>
+                        </h5>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-primary" style="width: 80%">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-user"></i>
+                                </span>My Account</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-envelope"></i>
+                                </span>Messages</a>
+                    </li>
+                    <li>
+                        <a href="{:U('Index/resetPassword')}">
+                                <span class="icon"><i class="fa fa-cog"></i>
+                                </span>修改密码</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="{:U('Index/logout')}">
+                                <span class="icon"><i class="fa fa-sign-out"></i>
+                                </span>登　出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <h5 class="sidebar-header">Navigation</h5>
+            <ul class="nav nav-pills nav-stacked" id="menu_list">
+                <li class="active" title="Index-index" id="firstLi">
+                    <a href="{:U('Channel/Index/index')}">
+                        <i class="fa  fa-fw fa-tachometer"></i> 工作台
+                    </a>
+                </li>
+                <li class="nav-dropdown" id="secondLi">
+                    <a href="{:U('Channel/Task/index')}" title="任务模块">
+                        <i class="fa  fa-fw fa-cogs"></i> 任务管理
+                    </a>
+                </li>
+                <li class="nav-dropdown" id="thirdLi">
+                    <a href="{:U('Channel/Consume/index')}" title="消费管理">
+                        <i class="fa  fa-fw fa-cogs"></i> 消费管理
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+    <section class="main-content-wrapper">
+        <div class="pageheader">
+            <h1><?php echo $currentData['cname'] ?></h1>
+            <p class="description"><?php echo 0 === strcmp($currentData['cname'], 'Index') ? '欢迎登入后台管理系统' : '' ?></p>
+            <div class="breadcrumb-wrapper hidden-xs">
+                <span class="label">You are here:</span>
+                <ol class="breadcrumb">
+                    <li class="active"><?php echo $currentData['cname'] ?></li>
+                    <li><?php echo $currentData['aname'] ?></li>
+                </ol>
+            </div>
+        </div>
+        {__CONTENT__}
+    </section>
+</section>
+
+
+
+<!--Page Level JS-->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}countTo/jquery.countTo.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}weather/js/skycons.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}daterangepicker/moment.min.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}daterangepicker/daterangepicker.js"></script>
+<!-- ChartJS  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}chartjs/Chart.min.js"></script>
+<!-- Morris  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}morris/js/morris.min.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}morris/js/raphael.2.1.0.min.js"></script>
+<!-- Vector Map  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+<!-- Gauge  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}gauge/gauge.min.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}gauge/gauge-demo.js"></script>
+<!-- Calendar  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}calendar/clndr.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}calendar/clndr-demo.js"></script>
+<script src="{$Think.const.ADMIN_PLUGIN_URL}underscore/underscore-min.js"></script>
+<!-- Weather  -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}weather/js/skycons.js"></script>
+<!-- Switch -->
+<script src="{$Think.const.ADMIN_PLUGIN_URL}switchery/switchery.min.js"></script>
+<!--Load these page level functions-->
+<script src="{$Think.const.ADMIN_JS_URL}src/common.js"></script>
+
+<script>
+    $(document).ready(function() {
+        app.dateRangePicker();
+        app.chartJs();
+        app.weather();
+        app.spinStart();
+        app.spinStop();
+    });
+</script>
+
+<input type="hidden" value="{$currentData['cname']}" id="cur_ca"/>
+<script>
+    $(function(){
+        var node = $("#cur_ca");
+
+        if (node.length > 0) {
+            var val = node.val();
+            var listNode = $("#menu_list").find("li");
+
+            listNode.each(function(k, v){
+                var that = $(this);
+
+                if (val == that.attr("title")) {
+                    listNode.removeClass("active");
+
+                    if (that.parent(".nav-sub").length > 0) {
+                        that.parents(".nav-dropdown").addClass("active");
+                        that.parent(".nav-sub").show();
+                        that.find("a").css("color", "#fff");
+                    } else {
+                        that.addClass("active");
+                    }
+                }
+            });
+        }
+
+    });
+</script>
+
+
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">消息提示</h4>
+            </div>
+            <div class="modal-body">
+                <p>你确定要执行删除操作吗 ？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">取 消</button>
+                <button type="button" class="btn btn-danger">确 定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var now =new Date();
+    time=now.toLocaleDateString();
+    time=(time.replace(/\//g,'-'));
+
+    $('.datepicker').datetimepicker({
+        language:'zh-CN',
+        format:'yyyy-mm-dd hh:ii:ss',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        startDate:Date,
+        showMeridian: 1,
+        startDate:time
+    });
+
+    $('.datepicker2').datetimepicker({
+        language:'zh-CN',
+        format:'yyyy-mm-dd',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        minView:'month',
+        showMeridian: 1,
+    });
+
+</script>
+</body>
+
+</html>
